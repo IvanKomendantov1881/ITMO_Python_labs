@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 28px;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 84px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+.MainBlockInput{
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.Input1, .Input2{
+    width: 625px;
+    height: 70px; 
+    border-radius: 18px;
+    padding-left: 10px;
+    font-size: 28px;
+    outline: none;
+}
+
+.ButtonSendInput1{
+    width: 300px;
+    height: 70px;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 20px;
+    outline: none;
+    font-size: 24px;
+}
+.ButtonSendInput2{
+    width: 300px;
+    height: 70px;
+    background-color: transparent;
+    border-color: black;
+    border-radius: 20px;
+    outline: none;
+    font-size: 24px;
+}
+.BlockButton{
+    padding-left: 10px;
+}
+.ButtonSendInput1:hover {
+  background-color: black; /* Цвет при наведении */
+  transition: background-color 0.3s;
+  color: white; /* Цвет текста при наведении */
+
+}
+
+.OutputData{
+    padding-top: 200px;
+    text-align: center;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
+    <title>Личная библиотека</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1 class="MainText">База прочитанных книг</h1>
+        </div>
+    </header>
+    <section class="InputData">
+        <div class="MainBlockInput">
+            <form action="#" method="post">
+                 <input type="text" name="name" class="Input1" placeholder="Название прочитанной книги">
+                 <input type="text" name="author" class="Input2" placeholder="Автор прочитанной книги">
+                <button class="ButtonSendInput1">Отправить</button>
+            </form>
+        </div>
+    </section>
+    <section class="OutputData">
+        <form action="{{ url_for('clear') }}" method="post">
+            <button class="ButtonClear">Очистить базу</button>
+        </form>
+        <div class="BlockOutputData">
+            <ul>
+                {% for book in books %}
+                    <li>{{ book.author }} --- <i>{{ book.name }}</i></li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
