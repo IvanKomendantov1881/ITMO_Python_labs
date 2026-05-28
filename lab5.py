@@ -22,8 +22,7 @@ name = [name for name in f if re.fullmatch(r'[A-Z][a-zA-Z]+', name)]
 date = [dt for dt in f if re.fullmatch(r'\d{4}-\d{2}-\d{2}', dt)]
 link = [lk for lk in f if re.fullmatch(r'https?://[^\s]+', lk.strip())]
 row = [[idu[i], name[i], email[i], link[i], date[i]] for i in range(len(idu))]
-print(idu)
-print(date)
+
 with open('result.csv', 'w', newline='', encoding='utf-8') as f:
     writer = csv.writer(f)
     writer.writerow(['Id', 'Name', 'Email', 'URL', 'Date'])

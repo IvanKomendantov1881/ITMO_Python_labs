@@ -88,4 +88,3 @@ output_label.pack(pady=20)
 
 root.eval('tk::PlaceWindow . center')
 root.mainloop()
-
